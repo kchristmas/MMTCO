@@ -31,6 +31,18 @@
         console.error(error);
     }
 }*/
+search_btn.addEventListener("click", function(event) {
+    event.preventDefault();
+
+    fetchData();
+});
+
+reset_btn.addEventListener("click", function(event) {
+    event.preventDefault();
+
+    clearData();
+});
+
 
 async function fetchData() {
     var travel_destination = document.getElementById("search").value;
