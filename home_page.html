@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mara Martin Travel & Co</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Freemono, monospace;
+            background-image: url("images/background2.jpg");
+            background-size: cover;
+            background-repeat: none;
+        }
+
+        /* Navigation bar styles */
+        .nav_bar {
+            background-color: #F7F7F7;
+            color: white;
+            padding: 0px;
+            display: flex;
+            align-items: center;
+        }
+
+        .nav_bar h1 {
+            margin: 0;
+            font-size: 30px;
+            margin-left: 10px;
+            color: #234D32;
+            padding-right: 20px;
+            font-family: Courier New, monospace;
+        }
+
+        .nav_bar a {
+            color: #234D32;
+            text-decoration: none;
+            padding: 0px 15px;
+        }
+
+        .nav_bar a:hover {
+            text-decoration: underline;
+        }
+
+        /* Logo styles */
+        .logo {
+            width: auto;
+            height: 20px;
+            margin-right: 0px;
+            margin-left: 5px;
+        }
+
+        /* Search bar styles */
+        .search_bar {
+            margin-left: auto;
+            display: flex;
+            align-items: center;
+        }
+
+        .search_bar input[type=text] {
+            padding: 8px;
+            margin-right: 5px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .search_bar .search_btn, .search_bar .reset_btn {
+            padding: 8px 12px;
+            border: none;
+            border-radius: 5px;
+            background-color: #234D32;
+            color: white;
+            cursor: pointer;
+            font-size: 14px;
+        }
+        .reset_btn {
+            margin-right: 10px;
+        }
+
+        .search_bar .search_btn:hover, .search_bar .reset_btn:hover {
+            background-color: #86AB90;
+        }
+        .logo {
+            height: 75px;
+            width: auto;
+            margin-right: 5px;
+            padding-left: 10px;
+        }
+
+        /*home page styles underneath nav bar */
+        .home_page {
+            color: white;
+            background-color: rgba(0, 0, 0, 0.25); 
+            padding: 20px;
+        }
+
+        .home_page h1 {
+            font-family: Courier New, monospace;
+            font-size: 70px;
+            margin-top: 200px;
+            margin-left: 100px;
+        }
+
+        .home_page h2 {
+            font-family: Verdana;
+            font-size: 14px;
+            padding-right: 650px;
+            margin-top: 20px;
+            margin-bottom: 100px;
+            margin-left: 100px;
+            text-align: justify;
+        }
+        /* search results styles*/
+
+
+    </style>
+</head>
+<body>
+    <div class="nav_bar">
+        <img src="mara.logo.png" class="logo">
+        <h1>MM</h1>
+        <a href="#home">Home</a>
+        <a href="about_us.html">About Us</a>
+        <a href="contact_us.html">Contact Us</a>
+
+        <div class="search_bar">
+                <input type="text" placeholder="search..." id="search">
+                <button type="submit" class="search_btn" onclick="fetchData()">Search</button>
+                <button type="reset" class="reset_btn" onclick="clearData()">Clear</button>
+        </div>
+        <div class="search_results">
+            <!--<img src="" alt="Destination Picture" id="destination_picture" style = "display: none">-->
+
+        </div>
+    </div>
+    <div class="home_page">
+        <h1>ADVENTURE<br>AWAITS YOU</h1>
+        <h2>Find your next extraordinary travel destination, where the world is your playground and every moment is an opportunity to embark on a new adventure. Start your journey today with Mara Martin Travel & Co, and let the magic of travel ignite your spirit of wanderlust.</h2>
+    </div>
+
+    <script type="text/javascript" src="travel_recommendation.js"></script>
+</body>
+
+</html>

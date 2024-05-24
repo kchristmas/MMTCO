@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mara Martin Travel & Co</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Freemono, monospace;
+            background-image: url("images/background3.jpg");
+            background-size: cover;
+            background-repeat: none;
+        }
+
+        /* Navigation bar styles */
+        .nav_bar {
+            background-color: #F7F7F7;
+            color: white;
+            padding: 0px;
+            display: flex;
+            align-items: center;
+        }
+
+        .nav_bar h1 {
+            margin: 0;
+            font-size: 30px;
+            margin-left: 10px;
+            color: #234D32;
+            padding-right: 20px;
+            font-family: Courier New, monospace;
+        }
+
+        .nav_bar a {
+            color: #234D32;
+            text-decoration: none;
+            padding: 0px 15px;
+        }
+
+        .nav_bar a:hover {
+            text-decoration: underline;
+        }
+
+        /* Logo styles */
+        .logo {
+            width: auto;
+            height: 20px;
+            margin-right: 0px;
+            margin-left: 5px;
+        }
+
+        .logo {
+            height: 75px;
+            width: auto;
+            margin-right: 5px;
+            padding-left: 10px;
+        }
+
+        /*home page styles underneath nav bar */
+        .home_page {
+            color: white;
+            background-color: rgba(0, 0, 0, 0.5); 
+            padding: 20px;
+        }
+
+        .home_page h1 {
+            font-family: Courier New, monospace;
+            font-size: 70px;
+            text-align: center;
+        }
+
+        .contact_form {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 100px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .contact_form input[type=text], 
+        .contact_form input[type=email], 
+        .contact_form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        .contact_form input[type=submit] {
+            background-color: #234D32;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        .contact_form input[type=submit]:hover {
+            background-color: #86AB90;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav_bar">
+        <img src="mara.logo.png" class="logo">
+        <h1>MM</h1>
+        <a href="home_page.html">Home</a>
+        <a href="about_us.html">About Us</a>
+        <a href="#contactus">Contact Us</a>
+    </div>
+    <div class="home_page">
+        <h1>CONTACT US</h1>
+        <div class="contact_form">
+            <form action="/submit-form" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Your name.." required>
+        
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Your email.." required>
+        
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" placeholder="Write something.." style="height:200px" required></textarea>
+        
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </div>
