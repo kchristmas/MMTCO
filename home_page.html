@@ -109,13 +109,38 @@
             text-align: justify;
         }
         /* search results styles*/
+        .search_results {
+            display: none;
+            background-color: #DDDDDD;
+            width: 300px;
+            padding: 20px;
+            margin-left: 70%;
+        }
+        
+        .search_results h3 {
+            font-family:'Courier New', Courier, monospace;
+            font-size: 18px;
+            text-align: center;
+            color: black;
+        }
 
+        .search_results p {
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 14px;
+            color: black;
+            text-align: center;
+        }
+
+        .search_results img {
+            width: 280px;
+            margin-left: 10px;
+        }
 
     </style>
 </head>
 <body>
     <div class="nav_bar">
-        <img src="mara.logo.png" class="logo">
+        <img src="images/mara.logo.png" class="logo">
         <h1>MM</h1>
         <a href="#home">Home</a>
         <a href="about_us.html">About Us</a>
@@ -123,20 +148,20 @@
 
         <div class="search_bar">
                 <input type="text" placeholder="search..." id="search">
-                <button type="submit" class="search_btn">Search</button>
-                <button type="reset" class="reset_btn">Clear</button>
-        </div>
-        <div class="search_results">
-            <!--<img src="" alt="Destination Picture" id="destination_picture" style = "display: none">-->
-
+                <button type="submit" class="search_btn" id="search_btn">Search</button>
+                <button type="reset" class="reset_btn" id="reset_btn">Clear</button>
         </div>
     </div>
     <div class="home_page">
+        <div class="search_results" id="search_results">
+            <!--<img src="" alt="Destination Picture" id="destination_picture" style = "display: none">-->
+    
+        </div>
         <h1>ADVENTURE<br>AWAITS YOU</h1>
         <h2>Find your next extraordinary travel destination, where the world is your playground and every moment is an opportunity to embark on a new adventure. Start your journey today with Mara Martin Travel & Co, and let the magic of travel ignite your spirit of wanderlust.</h2>
     </div>
 
-    <script type="text/javascript" src="travel_recommendation.js"></script>
+    <script type="text/javascript" src="travel-recommendation2.js"></script>
 </body>
 
 </html>
