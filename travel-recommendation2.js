@@ -25,7 +25,7 @@ function displayData(data, travel_destination) {
         reference = data.temples;
     } else if (travel_destination === "beach" || travel_destination === "beaches") {
         reference = data.beaches;
-    } else if (travel_destination === "japan" || travel_destination === "tokyo" || travel_destination === "kyoto") {
+    } else if (travel_destination === "japan" || travel_destination === "tokyo" || travel_destination === "kyoto" || travel_destination === "country") {
         reference = data.countries[1].cities;
     } else if (travel_destination === "australia" || travel_destination === "melbourne" || travel_destination === "sydney") {
         reference = data.countries[0].cities;
