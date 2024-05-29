@@ -62,4 +62,5 @@ function displayResults(reference) {
 function clearData() {
     var container = document.getElementById("search_results");
     container.innerHTML = "";
+    container.style.display = "block";
 }
